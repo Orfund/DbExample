@@ -7,9 +7,15 @@
 //
 
 #include <stdio.h>
-
+#include "filework.h"
+#include "db.h"
+#include "query.h"
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    _array = readRecords();
+    char rdbuf [1000];
+    fgets(rdbuf, 999, stdin);
+    struct SearchData sdata = parse_query(rdbuf);
+    struct choice c = Select(sdata.name, sdata.grMin, sdata.grMax);
+    printChoice(c);
     return 0;
 }
