@@ -10,12 +10,10 @@
 #include "filework.h"
 #include "db.h"
 #include "query.h"
+#include "server.h"
 int main(int argc, const char * argv[]) {
     _array = readRecords();
-    char rdbuf [1000];
-    fgets(rdbuf, 999, stdin);
-    struct SearchData sdata = parse_query(rdbuf);
-    struct choice c = Select(sdata.name, sdata.grMin, sdata.grMax);
-    printChoice(c);
+    init_server(7009);
+    while(1)process(get_client());
     return 0;
 }

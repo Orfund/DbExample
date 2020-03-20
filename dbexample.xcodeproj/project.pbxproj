@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D18A2792424E8F1009E01B5 /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D18A2782424E8F1009E01B5 /* server.c */; };
 		9DC38C6D24223D4F00BDCB68 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DC38C6C24223D4F00BDCB68 /* main.c */; };
 		9DC38C7624223DAA00BDCB68 /* filework.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DC38C7524223DAA00BDCB68 /* filework.c */; };
 		9DC38C79242240BC00BDCB68 /* db.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DC38C78242240BC00BDCB68 /* db.c */; };
@@ -26,6 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D18A2772424E8F1009E01B5 /* server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = server.h; sourceTree = "<group>"; };
+		9D18A2782424E8F1009E01B5 /* server.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = server.c; sourceTree = "<group>"; };
+		9D18A27A2424EE1B009E01B5 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		9DC38C6924223D4E00BDCB68 /* dbexample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dbexample; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC38C6C24223D4F00BDCB68 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		9DC38C7324223D7200BDCB68 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
@@ -75,6 +79,9 @@
 				9DC38C78242240BC00BDCB68 /* db.c */,
 				9DC38C7A2422455800BDCB68 /* query.h */,
 				9DC38C7B2422455800BDCB68 /* query.c */,
+				9D18A2772424E8F1009E01B5 /* server.h */,
+				9D18A2782424E8F1009E01B5 /* server.c */,
+				9D18A27A2424EE1B009E01B5 /* index.html */,
 			);
 			path = dbexample;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 				9DC38C79242240BC00BDCB68 /* db.c in Sources */,
 				9DC38C7624223DAA00BDCB68 /* filework.c in Sources */,
 				9DC38C7C2422455800BDCB68 /* query.c in Sources */,
+				9D18A2792424E8F1009E01B5 /* server.c in Sources */,
 				9DC38C6D24223D4F00BDCB68 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
